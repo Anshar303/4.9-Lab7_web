@@ -14,7 +14,7 @@
         <input type = 'submit' value = 'Send'>
     </form> <br>
     <?php
-    echo ' Slamat Datang ' . @$_POST['Nama'] . @ $_GET['Nama'] ;
+    echo ' Slamat Datang ' . @ $_POST['Nama'] . @ $_GET['Nama'] ;
     ?> <br>
     <!-- pekerjaan OPERATOR -->
 
@@ -22,9 +22,9 @@
     $gaji = 10000000 ;
     $pajak = 0.1 ;
     $thp = $gaji - ($gaji * $pajak) ;
-    echo 'gaji sebelum pajak = Rp. $gaji <br>' ;
-    echo 'gaji yang di bawa pulang = Rp. $thp' ;
-    ?>
+    echo "gaji sebelum pajak = Rp. $gaji <br>" ;
+    echo "gaji yang di bawa pulang = Rp. $thp" ;
+    ?><br>
 
     <!-- kondisi IF -->
     <?php
@@ -51,6 +51,8 @@
             break;
         default:
             echo "Sabtu";
+            break;
+        }
     ?>
 
     <!-- PENGUANGAN FOR -->
@@ -68,6 +70,7 @@
     ?>
 
     <!-- PENGULANGAN WHILE -->
+    <h2>perulangan 1 sampai  STOP DI 10</h2>
     <?php
     echo "Perulangan 1 sampai 10 <br />";
     $i=1;
@@ -79,6 +82,7 @@
     ?>
 
     <!-- PENGULANGAN DOWHILE -->
+    <h2>PERTIMBANGAN</h2>
     <?php
     echo "Perulangan 1 sampai 10 <br />";
     $i=1;
